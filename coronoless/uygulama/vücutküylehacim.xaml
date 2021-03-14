@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="coronoless.uygulama.vücutküylehacim"
+              BackgroundImageSource="https://cdn.pixabay.com/photo/2018/01/17/06/06/silhouette-3087519_960_720.png"
+             Padding="30">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid TranslationY="57">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Entry Placeholder="Kilonuzu girin" x:Name="kilo" Grid.Row="0" Grid.Column="0" 
+                       PlaceholderColor="Black" 
+                       FontAttributes="Bold" FontSize="Medium" BackgroundColor="MediumSeaGreen" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                       Margin="15"></Entry>
+                <Entry Placeholder="Boyunuzu cm cinsinden girin" x:Name="boy" Grid.Row="1" Grid.Column="0"
+                       PlaceholderColor="Black" 
+                       FontAttributes="Bold" FontSize="Medium" BackgroundColor="MediumSeaGreen" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                       Margin="15"></Entry>
+                <Entry x:Name="cinsiyet" Placeholder="Erkek=xy Kadın=xx" Grid.Column="0" Grid.Row="2"
+                       PlaceholderColor="Black" 
+                       FontAttributes="Bold" FontSize="Medium" BackgroundColor="MediumSeaGreen" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                       Margin="15"></Entry>
+                <Button Text="HESAPLA" x:Name="hesapla" Clicked="hesapla_Clicked" Grid.Row="3" Grid.Column="0"
+                        FontAttributes="Bold" FontSize="Medium"
+                        BackgroundColor="MediumSeaGreen"  VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                        Margin="15"></Button>
+                <Label Text="" x:Name="uyarı" Grid.Row="4" Grid.Column="0"
+                       FontSize="Medium" FontAttributes="Bold" TranslationY="160" TextColor="Black"></Label>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

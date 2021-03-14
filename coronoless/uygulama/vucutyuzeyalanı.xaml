@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="coronoless.uygulama.vucutyuzeyalanı"
+             Padding="30"
+             BackgroundImageSource="https://cdn.pixabay.com/photo/2018/01/17/06/05/silhouette-3087517_960_720.png">
+    <ContentPage.Content>
+        <StackLayout TranslationY="57">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Picker Title="Choose your height" Grid.Column="0" Grid.Row="0"  x:Name="boy"
+                         FontAttributes="Bold" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="Black" 
+                        BackgroundColor="#159318" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TitleColor="Black"></Picker>
+                <Picker Title="Choose your weight" Grid.Column="0" Grid.Row="1"  x:Name="kilo"
+                         FontAttributes="Bold" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="Black" 
+                        BackgroundColor="#159318" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TitleColor="Black"></Picker>
+
+                <Button Text="CALCULATE" x:Name="hesap" Clicked="hesap_Clicked" Grid.Column="0" Grid.Row="2"
+                     FontAttributes="Bold" FontSize="Medium" TextColor="#159318" 
+                        BackgroundColor="black" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BorderColor="#159318" BorderWidth="4"></Button>
+               
+                <Label Text="PLEASE DO NOT LEAVE BLANK" x:Name="son"
+                    BackgroundColor="#159318"
+                   Opacity="0.8" TextColor="Black" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center"
+                   Grid.Column="0" Grid.Row="3" TranslationY="250" ></Label>
+            </Grid>
+           
+          
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

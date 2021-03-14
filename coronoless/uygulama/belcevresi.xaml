@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="coronoless.uygulama.belcevresi"
+               BackgroundImageSource="https://cdn.pixabay.com/photo/2018/08/12/17/43/silhouette-3601295_960_720.png"
+             Padding="30">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid TranslationY="57">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Entry x:Name="cm" Placeholder="ENTER YOUR WAIST SIZE (CM)" Grid.Column="0" Grid.Row="0" PlaceholderColor="Black" 
+                       FontAttributes="Bold" FontSize="Medium" BackgroundColor="#F5AE0C" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                       Margin="15" Keyboard="Numeric"></Entry>
+                <Entry x:Name="cinsiyet" Placeholder="MAN=XY WOMEN=XX" Grid.Column="0" Grid.Row="1" PlaceholderColor="Black"
+                       FontAttributes="Bold" FontSize="Medium" BackgroundColor="#F5AE0C"  VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                       Margin="15"></Entry>
+                <Button Text="CALCULATE" TextColor="#F5AE0C" Grid.Row="2" Grid.Column="0" x:Name="hesap" Clicked="hesap_Clicked" FontAttributes="Bold" FontSize="Medium"
+                        BackgroundColor="Black"  VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                        Margin="15" BorderColor="#F5AE0C" BorderWidth="4"></Button>
+                <Label Text="PLEASE DO NOT LEAVE BLANK" x:Name="yazdıur" Grid.Column="0" Grid.Row="3" FontSize="Medium" FontAttributes="Bold"  TextColor="#F5AE0C"
+                       BackgroundColor="Black" Opacity="0.7" HorizontalTextAlignment="Center" TranslationY="250" HeightRequest="81"></Label>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

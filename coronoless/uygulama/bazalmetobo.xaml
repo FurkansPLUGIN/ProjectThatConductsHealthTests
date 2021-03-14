@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="coronoless.uygulama.bazalmetobo"
+             BackgroundImageSource="https://cdn.pixabay.com/photo/2018/08/12/17/43/silhouette-3601295_960_720.png"
+             Padding="30">
+    <ContentPage.Content  >
+        <StackLayout>
+            <Grid TranslationY="57" Opacity="50">
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Entry Placeholder="WOMEN=XX MEN=XY" x:Name="cinsiyet" Grid.Row="0" Grid.Column="0"  
+                       VerticalOptions="Center" HorizontalOptions="Fill" FontAttributes="Bold" FontSize="Medium" TextColor="Black" PlaceholderColor="Black"
+                       BackgroundColor="#F5AE0C" Margin="15"></Entry>
+                <Entry Placeholder="Enter your weight (KG)" x:Name="kilo" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                       FontAttributes="Bold" FontSize="Medium" TextColor="Black" PlaceholderColor="Black"
+                       BackgroundColor="#F5AE0C"  Margin="15" Keyboard="Numeric"></Entry>
+                <Entry Placeholder="WRITE YOUR HEIGHT (CM)" x:Name="boy" Grid.Row="2" Grid.Column="0"  VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                       FontAttributes="Bold" FontSize="Medium" TextColor="Black" PlaceholderColor="Black"
+                       BackgroundColor="#F5AE0C"  Margin="15" Keyboard="Numeric"></Entry>
+                <Entry Placeholder="ENTER YOUR AGE" x:Name="yaş" Grid.Row="3" Grid.Column="0"  VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                       FontAttributes="Bold" FontSize="Medium" TextColor="Black" PlaceholderColor="Black"
+                       BackgroundColor="#F5AE0C"  Margin="15" Keyboard="Numeric"></Entry>
+                <Button Text="CALCULATE" x:Name="hesapla" Clicked="hesapla_Clicked" Grid.Column="0" Grid.Row="4"  VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                        FontAttributes="Bold" FontSize="Medium" TextColor="#F5A00C" 
+                       BackgroundColor="Black"  Margin="15" BorderColor="#F5A00C" BorderWidth="4"></Button>
+                <Label Text="" x:Name="uyarılabel" Grid.Row="5" Grid.Column="0"  HorizontalOptions="FillAndExpand"
+                       FontAttributes="Bold" FontSize="Medium" TextColor="Black"  Margin="15" ></Label>
+                <Label Text="PLEASE DO NOT LEAVE BLANK" x:Name="sonuç" Grid.Row="6" Grid.Column="0"  HorizontalOptions="FillAndExpand"
+                       FontAttributes="Bold" FontSize="Medium" TextColor="#F5A00C"  Margin="15" TranslationY="-45" BackgroundColor="Black"
+                       Opacity="0.7" HorizontalTextAlignment="Center" ></Label>
+
+            </Grid>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

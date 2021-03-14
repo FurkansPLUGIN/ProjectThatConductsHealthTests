@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="coronoless.uygulama.belkalcaoranı"
+             BackgroundImageSource="https://cdn.pixabay.com/photo/2019/06/14/12/11/yoga-day-4273478_960_720.png">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid TranslationY="57">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Picker Title="Choose a gender" x:Name="cinsiyet" Grid.Row="0" Grid.Column="0" 
+                        SelectedIndexChanged="cinsiyet_SelectedIndexChanged" 
+                        FontAttributes="Bold" FontSize="Medium" BackgroundColor="#109514" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                       Margin="15" TitleColor="Black" HorizontalTextAlignment="Center" Opacity="0.9"></Picker>
+
+                <Picker Title="Choose your waist circumference" x:Name="belcevre" Grid.Row="1" Grid.Column="0" 
+                        FontAttributes="Bold" FontSize="Medium" BackgroundColor="#109514" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                       Margin="15" TitleColor="Black" HorizontalTextAlignment="Center" Opacity="0.9"></Picker>
+                <Picker Title="choose your hip circumference" x:Name="kalcacevre" Grid.Row="2" Grid.Column="0" 
+                         FontAttributes="Bold" FontSize="Medium" BackgroundColor="#109514" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                       Margin="15" TitleColor="Black" HorizontalTextAlignment="Center" Opacity="0.9"></Picker>
+                <Button Text="CALCULATE" x:Name="hesap" Clicked="hesap_Clicked" Grid.Column="0" Grid.Row="3" 
+                         FontAttributes="Bold" FontSize="Medium"
+                        BackgroundColor="Black"  VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                        Margin="15" TextColor="#109514" BorderWidth="4" BorderColor="#109514"
+                    WidthRequest="385" ></Button>
+                
+            </Grid>
+            <Label Text="" x:Name="bilgilendirme" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Black"
+                   TextColor="#109514"></Label>
+            <Label Text="" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" x:Name="sonuç"
+                   BackgroundColor="Black" TextColor="#109514" TranslationY="100" WidthRequest="300" FontSize="Medium" FontAttributes="Bold" 
+                   HeightRequest="50" HorizontalTextAlignment="Center" Opacity="0.8"></Label>
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

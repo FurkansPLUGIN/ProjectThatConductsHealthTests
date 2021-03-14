@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="coronoless.uygulama.toplamsumik"
+             Padding="30"
+             BackgroundImageSource="https://cdn.pixabay.com/photo/2019/06/14/12/11/yoga-day-4273478_960_720.png">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Picker Title="Choose your gender" x:Name="cin" 
+                        Grid.Column="0" Grid.Row="0" SelectedIndexChanged="cin_SelectedIndexChanged"
+                          FontAttributes="Bold" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="Black" 
+                        BackgroundColor="#159318" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TitleColor="Black"></Picker>
+
+                <Picker Title="Choose your age" x:Name="yas"
+                          FontAttributes="Bold" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="Black" 
+                        BackgroundColor="#159318" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TitleColor="Black"
+                        Grid.Column="0" Grid.Row="1"></Picker>
+
+                <Picker Title="Choose your weight" x:Name="kılo"
+                          FontAttributes="Bold" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="Black" 
+                        BackgroundColor="#159318" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TitleColor="Black"
+                        Grid.Column="0" Grid.Row="2"></Picker>
+                <Picker Title="Choose your height" x:Name="boy" 
+                          FontAttributes="Bold" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="Black" 
+                        BackgroundColor="#159318" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TitleColor="Black"
+                        Grid.Column="0" Grid.Row="3"></Picker>
+
+                <Button Text="CALCULATE" x:Name="hesap" Grid.Column="0" Grid.Row="4"
+                          FontAttributes="Bold" FontSize="Medium" TextColor="#159318" 
+                        BackgroundColor="black" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BorderColor="#159318" BorderWidth="4"
+                    Clicked="hesap_Clicked"></Button>
+
+                <Label Text="PLEASE DO NOT LEAVE BLANK" x:Name="son" 
+                   BackgroundColor="#159318"
+                   Opacity="0.8" TextColor="Black" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center"
+                      TranslationY="250" Grid.Column="0" Grid.Row="5"></Label>
+
+
+            </Grid>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

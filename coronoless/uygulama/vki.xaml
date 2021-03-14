@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="coronoless.uygulama.vki"
+             Padding="30"
+              BackgroundImageSource="https://cdn.pixabay.com/photo/2018/08/12/17/43/silhouette-3601295_960_720.png"
+             >
+    <ContentPage.Content>
+        <StackLayout >
+            <Grid TranslationY="57">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                
+                <Entry Placeholder="Enter your weight (KG)" Grid.Column="0" Grid.Row="0" x:Name="entrybirinci"
+                       PlaceholderColor="Black" 
+                       FontAttributes="Bold" FontSize="Medium" BackgroundColor="#F7A932" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                       Margin="15" Keyboard="Numeric"></Entry>
+                
+                <Entry Placeholder="Enter your height (CM)" Grid.Column="0" Grid.Row="1" x:Name="entryikinci"
+                       PlaceholderColor="Black" 
+                       FontAttributes="Bold" FontSize="Medium" BackgroundColor="#F7A932" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                       Margin="15" Keyboard="Numeric"></Entry>
+
+                <Button Text="CALCULATE" x:Name="Hesaplabutton" Clicked="Hesaplabutton_Clicked" Grid.Column="0" Grid.Row="2"
+                        FontAttributes="Bold" FontSize="Medium"
+                        BackgroundColor="Black"  VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                        Margin="15" TextColor="#E7A211" BorderWidth="4" BorderColor="#EA9D27"></Button>
+
+                <Label Text="" x:Name="uyarılabel" Grid.Column="0" Grid.Row="3" 
+                       FontSize="Medium" FontAttributes="Bold" TranslationY="180" TextColor="#F7A932"></Label>
+
+                <Label Text="PLEASE DO NOT LEAVE BLANK" x:Name="sonuç" Grid.Column="0" Grid.Row="4"
+                       FontSize="Medium" FontAttributes="Bold" TranslationY="200" TextColor="#EA8A25" BackgroundColor="Black" Opacity="0.8" 
+                       HorizontalTextAlignment="Center" HeightRequest="81"></Label>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
